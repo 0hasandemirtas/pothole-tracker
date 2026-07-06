@@ -141,21 +141,15 @@ def run(
     out.release()
  
 
-        
-
-
-    
-
-
 if __name__ == "__main__":
     run(
         model_path="best.pt",
         video_path="video.mp4",
-        output_path="output_m3.mp4",
+        output_path="output.mp4",
         conf=0.25,
         imgsz=640,
-        alpha=0.9,
+        alpha=0.4,
         n_confirm=3,
-        m_persist=3,
+        m_persist=15,
         draw_mask=True,
     )
